@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Cucina Italiana</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="..\css\cozinha_regional.css">
+
+</head>
+
+<body>
+    <!--Header1-->
+    <header class="header1">
+        <nav>
+            <div class="logo">
+                <a href="..\index.html">AMADRICIANA</a>
+            </div>
+            <div class="header-right">
+                <div class="logo_newsletter">
+                    <a href="newsletter.html">NEWSLETTER</a>
+                </div>
+                <div class="search_index_container">
+                    <button class="search_index_button" id="searchToggleBtn"><i class="fas fa-search"></i></button>
+                    <input type="text" id="searchInput" class="search-input" placeholder="Digite sua busca...">
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Header2 -->
+    <header>
+        <div class="header-container">
+            <nav>
+                <ul>
+                    <li><a href="cozinha_regional.html">COZINHA REGIONAL</a></li>
+                    <li><a href="receitas.html">RECEITAS</a></li>
+                    <li><a href="tutoriais.html">TUTORIAIS</a></li>
+                    <li><a href="la_escola.html">LA ESCOLA</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="body-content">
+        <div class="newsletter-flex-container">
+            
+            <div class="body-content-container">
+                <br><br>
+                <!--<h3 class="h3-content_titulo1">Conoscete la differenza tra cozze e cozze pelose?</h3>-->
+                <br>                
+                <!--<p>Você provavelmente já se perguntou (se já esteve em Taranto ou Bari): aqui estão os nomes</p>-->
+                <!--<p>bizarros desses mexilhões e por que eles são diferentes dos "clássicos".</p>-->
+                <br><br>
+            </div>
+            <!--<img src="..\img\hotTopic\conosceteLaDifferenza_Grande.png" alt="Newsletter" class="newsletter-img">-->
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Sobre Nós</h3>
+                <p>La Cucina Italiana é o seu guia definitivo para a autêntica culinária italiana. Compartilhamos
+                    receitas tradicionais, técnicas e histórias da Itália.</p>
+                <div class="social-icons">
+                    <a href="https://web.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.pinterest.com"><i class="fab fa-pinterest"></i></a>
+                    <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Links Rápidos</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="html/receitas.html">Receitas</a></li>
+                    <li><a href="https://www.youtube.com/">Vídeos</a></li>
+                    <li><a href="#">Dicas de Chefs</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Categorias</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Massas</a></li>
+                    <li><a href="#">Pizzas</a></li>
+                    <li><a href="#">Risotos</a></li>
+                    <li><a href="#">Sobremesas</a></li>
+                    <li><a href="#">Pães</a></li>
+                    <li><a href="#">Vinhos</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Newsletter</h3>
+                <p>Inscreva-se para receber nossas melhores receitas e dicas exclusivas!</p>
+                <div class="newsletter">
+                    <input type="email" placeholder="Seu e-mail">
+                    <button>Inscrever-se</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 La Cucina Italiana. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+        <script>
+            // Simulação de dados do banco de dados
+            const recipes = [
+                {
+                    id: 1,
+                    title: "Pasta alla Norma, la ricetta perfetta",
+                    description: "Um clássico siciliano com berinjela, tomate e ricotta salata.",
+                    image: "..\img\receitas\pasta_alla_norma.png",
+                    category: "Primi",
+                    prepTime: "30 min"
+                },
+                {
+                    id: 2,
+                    title: "Mezze penne al tonno",
+                    description: "Penne com atum, rápida e saborosa.",
+                    image: "..\img\receitas\mezze_penne_al_tonno.png",
+                    category: "Primi",
+                    prepTime: "20 min"
+                },
+                {
+                    id: 3,
+                    title: "Pasta al tonno: un grande classico",
+                    description: "Receita tradicional de massa com atum em várias versões.",
+                    image: "..\img\receitas\pasta_al_tonno.png",
+                    category: "Cucina",
+                    prepTime: "25 min"
+                },
+                {
+                    id: 4,
+                    title: "Passione focacce: 30 ricette salate e dolci",
+                    description: "Diversas opções de focaccia, do salgado ao doce.",
+                    image: "..\img\receitas\passione_focacce.png",
+                    category: "Cucina",
+                    prepTime: "2h"
+                },
+                {
+                    id: 5,
+                    title: "35 ricette con il miele, dolci e salate",
+                    description: "Pratos energéticos e delicados preparados com mel.",
+                    image: "..\img\receitas\ricette_con_il_miele.png",
+                    category: "Cucina",
+                    prepTime: "40 min"
+                },
+                {
+                    id: 6,
+                    title: "Come cucinare le uova",
+                    description: "As técnicas base para ovos e 50 receitas diferentes.",
+                    image: "..\img\receitas\come_cucinare_le_uova.png",
+                    category: "Cucina",
+                    prepTime: "15 min"
+                }
+            ];
+        </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const searchBtn = document.getElementById('searchToggleBtn');
+            const searchInput = document.getElementById('searchInput');
+            const headerRight = document.querySelector('.header-right');
+
+            searchBtn.addEventListener('click', function () {
+                searchInput.classList.add('active');
+                searchInput.focus();
+                headerRight.classList.add('input-open');
+                searchBtn.style.display = 'none';
+            });
+
+            searchInput.addEventListener('keydown', function (e) {
+                if (e.key === 'Enter') {
+                    searchInput.classList.remove('active');
+                    headerRight.classList.remove('input-open');
+                    searchBtn.style.display = 'inline-block';
+                }
+            });
+        });
+    </script>
+
+    
+</body>
+
+</html>

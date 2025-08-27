@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Cucina Italiana</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="..\css\newsletter.css">
+
+</head>
+
+<body>
+    <!--Header1-->
+    <header class="header1">
+        <nav>
+            <div class="logo">
+                <a href="..\index.html">AMADRICIANA</a>
+            </div>
+            <div class="header-right">
+                
+                <div class="search_index_container">
+                    <button class="search_index_button" id="searchToggleBtn"><i class="fas fa-search"></i></button>
+                    <input type="text" id="searchInput" class="search-input" placeholder="Digite sua busca...">
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="body-content">
+        <h2 class="newsletter-title">AJUDE-NOS A ESCREVER NOSSA NEWSLETTER</h2>
+        <hr class="newsletter-divider">
+        <div class="newsletter-flex-container">
+            <img src="..\img\hotTopic\newsletter\culinariaItaliana.png" alt="Newsletter" class="newsletter-img">
+            <div class="body-content-container">
+                <h3 class="h3-content_titulo1">Culinária Italiana</h3>
+                <br>                
+                <p>Todos os dias, inúmeras receitas deliciosas esperam por você,</p>
+                <p>dos clássicos tradicionais às criações mais originais. Além disso,</p>
+                <p>dicas e truques para aprimorar sua culinária, chefs renomados e</p>
+                <p>jovens para seguir, restaurantes para experimentar e muito mais </p>
+                <p>para experimentar a culinária italiana.</p>
+                <br><br>
+                <div class="newsletter-checkbox-container">
+                    <input type="checkbox" id="newsletterCheck">
+                    <label for="newsletterCheck">Você deseja receber nossa newsletter?</label>
+                </div>
+            </div>
+        </div>
+        
+        <div class="newsletter">
+            <input type="email" placeholder="Seu e-mail">
+            <button>SUBSCRIBE</button>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Sobre Nós</h3>
+                <p>La Cucina Italiana é o seu guia definitivo para a autêntica culinária italiana. Compartilhamos
+                    receitas tradicionais, técnicas e histórias da Itália.</p>
+                <div class="social-icons">
+                    <a href="https://web.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.pinterest.com"><i class="fab fa-pinterest"></i></a>
+                    <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Links Rápidos</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="html/receitas.html">Receitas</a></li>
+                    <li><a href="https://www.youtube.com/">Vídeos</a></li>
+                    <li><a href="#">Dicas de Chefs</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Categorias</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Massas</a></li>
+                    <li><a href="#">Pizzas</a></li>
+                    <li><a href="#">Risotos</a></li>
+                    <li><a href="#">Sobremesas</a></li>
+                    <li><a href="#">Pães</a></li>
+                    <li><a href="#">Vinhos</a></li>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 La Cucina Italiana. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const searchBtn = document.getElementById('searchToggleBtn');
+            const searchInput = document.getElementById('searchInput');
+            const headerRight = document.querySelector('.header-right');
+
+            searchBtn.addEventListener('click', function () {
+                searchInput.classList.add('active');
+                searchInput.focus();
+                headerRight.classList.add('input-open');
+                searchBtn.style.display = 'none';
+            });
+
+            searchInput.addEventListener('keydown', function (e) {
+                if (e.key === 'Enter') {
+                    searchInput.classList.remove('active');
+                    headerRight.classList.remove('input-open');
+                    searchBtn.style.display = 'inline-block';
+                }
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>
